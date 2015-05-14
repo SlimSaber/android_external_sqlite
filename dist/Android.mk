@@ -28,7 +28,8 @@ common_sqlite_flags := \
 	-DSQLITE_OMIT_COMPILEOPTION_DIAGS \
 	-DSQLITE_OMIT_LOAD_EXTENSION \
 	-DSQLITE_DEFAULT_FILE_PERMISSIONS=0600 \
-	-Dfdatasync=fdatasync
+	-Dfdatasync=fdatasync \
+	-DSQLITE_SECURE_DELETE
 
 device_sqlite_flags := $(common_sqlite_flags) \
     -DSQLITE_ENABLE_ICU \
